@@ -1,0 +1,111 @@
+.container {
+  width: 70%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-start; 
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background: black;
+  border-radius: 30px;
+  max-height: 80vh; 
+  overflow-y: auto; 
+}
+
+.container::-webkit-scrollbar {
+  display: none; 
+}
+
+.container {
+  -ms-overflow-style: none; 
+  scrollbar-width: none; 
+}
+
+
+
+  
+  .header {
+    display: flex;
+    align-items: center;
+    color: black;
+  }
+  
+  .title {
+    font-weight: bold;
+    color: rgb(255, 255, 255);
+    font-size: 4rem;
+    margin-bottom: 3rem;
+  }
+  
+  .inputContainer {
+    position: relative;
+  }
+  
+  .inputField {
+    padding: 0.5rem 2rem;
+    padding-right: 4rem;
+    outline: none;
+    width: 18rem;
+  }
+  
+  .addButton {
+    position: absolute;
+    top: 50%;
+    right: 2rem;
+    transform: translateY(-50%);
+    color: rgb(0, 0, 0);
+  }
+  
+  .errorMessage {
+    color: rgb(255, 0, 0);
+    font-size: 0.875rem;
+  }
+  
+  .todoItem {
+    background-color: white;
+    color: black;
+    margin: 0.5rem 0;
+    padding: 1rem;
+    font-size: 1.125rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    transition: all 0.5s ease-in-out;
+    width: 18rem;
+    height: 3rem;
+  }
+  
+  .todoItemCompleted {
+    text-decoration: line-through;
+    color: gray;
+  }
+  
+  .button {
+    
+    color: rgb(190, 181, 181);
+    font-size: 1rem;
+    padding: 0.25rem 0.5rem;
+    margin-right: 0.5rem;
+    outline: none;
+    cursor: pointer;
+    
+  }
+  .button:hover{
+    color: rgb(255, 255, 255);
+    font-size: 1.05rem;
+  }
+  
+  .editButton {
+    background-color: rgb(0, 0, 0);
+  }
+  
+  .completeButton {
+    background-color: rgb(0, 0, 0);
+  }
+  
+  .removeButton {
+    background-color: rgb(0, 0, 0);
+  }
+  
